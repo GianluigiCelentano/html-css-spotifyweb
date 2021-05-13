@@ -48,8 +48,8 @@ main .content {
 li {
     padding-top: 10px;
 }
-ul {
-    list-style: none;
+li:hover {
+    color: white;
 }
 .second {
     font-size: 15px;
@@ -69,22 +69,30 @@ ul {
     flex-direction: column;
     justify-content: flex-end;
 }
+.content {
+    height: 100vh;
+    overflow: auto;
+}
 .up-bar {
     height: 100px;
     width: 100%;
     background-color: #080B12;
-    opacity: 0.8;
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 .upgrade {
-    color: white;
-    border: 1px solid white;
+    color: #D2D2D2;
+    border: 1px solid #D2D2D2;
     padding: 15px;
     border-radius: 500px;
     font-weight: bold;
     margin-right: 10px;
+}
+.upgrade:hover {
+    color: white;
+    border: 1px solid white;
 }
 .inside-footer {
     height: 90px;
@@ -116,7 +124,7 @@ ul {
 }
 .player-functions {
     font-size: 25px;
-    color: white;
+    color: #D2D2D2;
 }
 .player-functions i {
     padding: 0 23px;
@@ -154,12 +162,23 @@ ul {
     padding: 35px;
     color: #D2D2D2;
 }
+.evidence li:hover{
+    text-decoration: underline lightgreen 3px;
+}
+i:hover {
+    color: white;
+}
 .recently-played {
     display: flex;
     justify-content: space-around;
 }
 .recently-played img {
-    height: 250px;
+    height: 260px;
+    padding: 10px;
+}
+.content img:hover {
+    background-image: url(/img/play-solid.svg);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 .album {
     color: white;
@@ -183,4 +202,7 @@ ul {
 .john-doe img {
     padding: 10px;
     height: 250px;
+}
+.uno-1 img, .due-2 img {
+    border-radius: 50%;
 }
