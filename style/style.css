@@ -21,16 +21,21 @@ body {
 }
 main .sidebar {
     background: #000000;
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 90px);
+    width: 250px;
 }
 main .content {
     background-color: #141922;
     height: calc(100vh - 90px);
+    width: calc(100% - 250px);
 }
 .logo {
     height: 50px;
+    min-height: 50px;
     margin-top: 25px;
-    margin-left: 10px;
+    margin-right: 50px;
 }
 .function {
     color: #D2D2D2;
@@ -38,7 +43,7 @@ main .content {
     padding-left: 20px;
     font-size: 20px;
     font-weight: bold;
-    min-height: 100px;
+    min-height: 150px;
 }
 li {
     padding-top: 10px;
@@ -48,7 +53,8 @@ ul {
 }
 .second {
     font-size: 15px;
-    height: 350px;
+    flex-grow: 1;
+    overflow: auto;
 }
 .plus {
     font-size: 40px;
@@ -59,7 +65,6 @@ ul {
 }
 .third {
     margin-right: 15px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -147,4 +152,27 @@ ul {
 }
 .evidence li {
     padding: 35px;
+    color: #D2D2D2;
+}
+.recently-played {
+    display: flex;
+    justify-content: space-around;
+}
+.recently-played img {
+    height: 250px;
+}
+.album {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.album-name {
+    font-size: 12px;
+    color: #D2D2D2;
+}
+.start {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
 }
