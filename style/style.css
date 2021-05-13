@@ -176,3 +176,11 @@ ul {
     font-size: 25px;
     padding: 15px;
 }
+.john-doe {
+    display: flex;
+    flex-direction: row;
+}
+.john-doe img {
+    padding: 10px;
+    height: 250px;
+}
