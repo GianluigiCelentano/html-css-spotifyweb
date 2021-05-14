@@ -159,6 +159,7 @@ li:hover {
     color: white;
     font-weight: bold;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .evidence li {
     padding: 35px;
@@ -171,9 +172,6 @@ li:hover {
 i:hover {
     color: white;
     cursor: pointer;
-}
-.sidebar .col-md-2 li {
-display: none;
 }
 .recently-played {
     display: flex;
