@@ -30,6 +30,7 @@ main .content {
     background-color: #141922;
     height: calc(100vh - 90px);
     width: calc(100% - 250px);
+    overflow: auto;
 }
 .logo {
     height: 50px;
@@ -69,10 +70,6 @@ li:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-.content {
-    height: 100vh;
-    overflow: auto;
 }
 .up-bar {
     height: 100px;
