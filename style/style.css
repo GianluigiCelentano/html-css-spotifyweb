@@ -26,6 +26,27 @@ main .sidebar {
     height: calc(100vh - 90px);
     width: 250px;
 }
+@media only screen and (max-width: 576px) {
+    .function span {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    main .sidebar {
+        width: auto;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-small {
+        margin-left: 20px;
+    }
+}
+.logo-small {
+    width: 25px;
+    visibility: hidden;
+}
 main .content {
     background-color: #141922;
     height: calc(100vh - 90px);
@@ -75,7 +96,6 @@ li:hover {
     height: 100px;
     width: 100%;
     background-color: #080B12;
-    
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -199,9 +219,9 @@ i:hover {
 }
 .content .cover:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.4;
 }
-.play-icon:hover {
+.cover:hover .play-icon {
     display: block;
 }
 .album {
