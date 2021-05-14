@@ -33,8 +33,8 @@ main .content {
     overflow: auto;
 }
 .logo {
-    height: 50px;
-    min-height: 50px;
+    width: 150px;
+    min-width: 100px;
     margin-top: 25px;
     margin-right: 50px;
 }
@@ -172,16 +172,38 @@ i:hover {
     color: white;
     cursor: pointer;
 }
+.sidebar .col-md-2 li {
+display: none;
+}
 .recently-played {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+.john-doe {
+    flex-wrap: wrap;
 }
 .recently-played img {
-    height: 250px;
+    height: 250px;    
 }
-.content img:hover {
+.cover {
+    position: relative;
+}
+.cover .play-icon {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+}
+.content .cover:hover {
     cursor: pointer;
     opacity: 0.5;
+}
+.play-icon:hover {
     display: block;
 }
 .album {
